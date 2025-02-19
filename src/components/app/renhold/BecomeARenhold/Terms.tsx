@@ -1,24 +1,14 @@
 import React from 'react';
-import {
-  Box,
-  Image,
-  Text,
-  Link,
-  Checkbox,
-  Flex,
-  Button,
-} from '@chakra-ui/react';
+import { Box, Text, Link, Checkbox, Flex, Button } from '@chakra-ui/react';
 
 const Terms = () => {
   return (
     <>
       <Box maxW={'1740px'} w="100%" px="20px" mx="auto">
         <Box my="60px">
-          <Text
-          color="black"
-          fontSize='30px'
-          fontWeight='bold'
-          >RENHOLD</Text>
+          <Text color="black" fontSize="30px" fontWeight="bold">
+            RENHOLD
+          </Text>
         </Box>
         <Box>
           <Text
@@ -122,7 +112,13 @@ const Terms = () => {
           <Checkbox defaultChecked>I agree</Checkbox>
         </Box>
         <Flex justifyContent={'flex-end'}>
-          <Button as={Link} href="/renhold/about-yourself" colorScheme="#1F4A40" bg="#1F4A40" mt={4}>
+          <Button
+            as={Link}
+            href="/renhold/about-yourself"
+            colorScheme="#1F4A40"
+            bg="#1F4A40"
+            mt={4}
+          >
             Continue
           </Button>
         </Flex>

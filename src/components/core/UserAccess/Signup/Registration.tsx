@@ -24,6 +24,11 @@ const Registration = () => {
             Inputplaceholder="Email"
           />
           <CustomLabelInput
+            Label="Phone Number"
+            InputType="tel"
+            Inputplaceholder="Phone Number"
+          />
+          <CustomLabelInput
             Label="Password"
             InputType="password"
             Inputplaceholder="Password"

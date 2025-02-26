@@ -4,7 +4,6 @@ import {
   Button,
   Flex,
   Step,
- 
   StepIcon,
   StepIndicator,
   StepNumber,

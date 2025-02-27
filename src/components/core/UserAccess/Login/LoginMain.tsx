@@ -1,4 +1,5 @@
 import { Box, Button, Input, Link, Text } from '@chakra-ui/react';
+import NextLink from 'next/link';
 import React, { useState } from 'react';
 import CustomWrapper from '../CustomWrapper';
 
@@ -68,6 +69,7 @@ const LoginMain = () => {
             />
           </Box>
           <Box>
+            <NextLink href='/forgotpassword' passHref>
             <Link
               mb="8px"
               fontWeight="700"
@@ -81,6 +83,7 @@ const LoginMain = () => {
             >
               Forgot Password?
             </Link>
+            </NextLink>
           </Box>
 
           <Button

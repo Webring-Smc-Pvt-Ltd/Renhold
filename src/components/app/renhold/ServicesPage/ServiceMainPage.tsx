@@ -167,7 +167,7 @@ const Services = [
     ],
   },
   {
-    CardImage: '/renhold/serviceimg.png',
+    CardImage: '/renhold/serviceimg1.png',
     CardHeading: 'IKEA Services',
     CardDescription: 'Hire a Renhold for all your IKEA needs',
     pragraphs: [

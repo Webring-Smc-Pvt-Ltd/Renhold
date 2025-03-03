@@ -1,19 +1,19 @@
-            import { Box, Flex, Grid,Heading,Button, Image, Text } from '@chakra-ui/react';
+            import { Box, Flex,Heading,Button, Image, Text } from '@chakra-ui/react';
             import React from 'react';
             import LayoutWrapper from '../../../core/LayoutWrapper/LayoutWrapper';
 
             const topics = [
                 {
-                title: "Home Inspiration",
-                image: "/renhold/home-inspiration.jfif", // Replace with actual image path
+                title: 'Home Inspiration',
+                image: '/renhold/home-inspiration.jfif', // Replace with actual image path
                 },
                 {
-                title: "Learn & How-tos",
-                image: "/renhold/learn-how-tos.jfif", // Replace with actual image path
+                title: 'Learn & How-tos',
+                image: '/renhold/learn-how-tos.jfif', // Replace with actual image path
                 },
                 {
-                title: "Lifestyle",
-                image: "/renhold/lifestyle.jfif", // Replace with actual image path
+                title: 'Lifestyle',
+                image: '/renhold/lifestyle.jfif', // Replace with actual image path
                 },
             ];
             const BlogsMain = () => {
@@ -65,7 +65,7 @@
                         </Box>
                     </Box>
                     <Box>
-                    <Flex flexDirection={'column'} alignItems={"center"} gap='32px'>
+                    <Flex flexDirection={'column'} alignItems={'center'} gap='32px'>
                         <Box >
                             <Text 
                             color="#010101"
@@ -87,8 +87,8 @@
                         {topics.map((topic, index) => (
                         <Box key={index} textAlign="center">
                             <Box
-                            w={{ base: "100px", md: "150px", lg: "180px" }}
-                            h={{ base: "100px", md: "150px", lg: "180px" }}
+                            w={{ base: '100px', md: '150p', lg: '180px' }}
+                            h={{ base: '100px', md: '150px', lg: '180px' }}
                             borderRadius="full"
                             overflow="hidden"
                             border="2px solid #ddd"
@@ -96,7 +96,7 @@
                             >
                             <Image src={topic.image} alt={topic.title} objectFit="cover" w="100%" h="100%" />
                             </Box>
-                            <Text mt={3} fontSize={{ base: "sm", md: "md", lg: "lg" }} fontWeight="500">
+                            <Text mt={3} fontSize={{ base: 'sm', md: 'md', lg: 'lg' }} fontWeight="500">
                             {topic.title}
                             </Text>
                         </Box>
@@ -114,9 +114,9 @@
             wrap="wrap"
             >
         {/* Left Content */}
-        <Box flex="1" minW="300px" textAlign={{ base: "center", md: "left" }}>
+        <Box flex="1" minW="300px" textAlign={{ base: 'center', md: 'left' }}>
             <Heading fontSize="2xl" fontWeight="bold" mb={4} maxW='210px'>
-            When BYOB stands for <br /> “Be Your Own Boss”
+            When BYOB stands for “Be Your Own Boss”
             </Heading>
             <Text fontSize="md" mb={6} color="gray.600">
             Learn why Vanessa, Shaneka, Eric, Zalika, Trevor, and Alana became Taskers and 
@@ -126,7 +126,7 @@
             <Button
             bg="green.700"
             color="white"
-            _hover={{ bg: "green.800" }}
+            _hover={{ bg: 'green.800' }}
             px={6}
             py={3}
             borderRadius="full"

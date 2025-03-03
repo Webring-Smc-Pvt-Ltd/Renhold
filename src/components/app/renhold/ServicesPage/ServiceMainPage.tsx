@@ -167,6 +167,31 @@ const Services = [
     ],
   },
   {
+    CardImage: '/renhold/services-winter-tasks.jfif',
+    CardHeading: 'Winter Tasks',
+    CardDescription: 'Get help with winter tasks',
+    pragraphs: [
+      {
+        pragraphText: 'Snow Removal',
+      },
+      { pragraphText: 'Sidewalk Salting' },
+      {
+        pragraphText: 'Window Winterization',
+      },
+      { pragraphText: 'Residential Snow Removal' },
+      {
+        pragraphText: 'Christmas Tree Removal',
+      },
+      { pragraphText: 'AC Winterization' },
+      { pragraphText: 'Winter Deck Maintenance' },
+      { pragraphText: 'Pipe Insulation' },
+      { pragraphText: 'Storm Door Instalation' },
+      { pragraphText: 'Water Heater Maintenance' },
+      { pragraphText: 'Pipe Insulation' },
+      { pragraphText: 'Wait in Line' },
+    ],
+  },
+  {
     CardImage: '/renhold/serviceimg1.png',
     CardHeading: 'IKEA Services',
     CardDescription: 'Hire a Renhold for all your IKEA needs',
@@ -218,6 +243,47 @@ const Services = [
       { pragraphText: 'Produce Gardening' },
       { pragraphText: 'Shed Maintenance' },
       { pragraphText: 'Pressure Washing' },
+    ],
+  },
+  {
+    CardImage: '/renhold/office-services.jfif',
+    CardHeading: 'Office Services',
+    CardDescription: 'Hire a Renhold to help around the office!',
+    pragraphs: [
+      {
+        pragraphText: 'Office Cleaning',
+      },
+      { pragraphText: 'Office Tech Setup' },
+      {
+        pragraphText: 'Office Movers',
+      },
+      { pragraphText: 'Office Supply & Snack Delivery' },
+      {
+        pragraphText: 'Office Furniture Assembly',
+      },
+      { pragraphText: 'Office Setup & Organization' },
+      { pragraphText: 'Office Administration' },
+      { pragraphText: 'Office Interior Design' },
+      { pragraphText: 'Office Mounting Services' },
+    ],
+  },
+  {
+    CardImage: '/renhold/serviceimg3.png',
+    CardHeading: 'Contactless Services',
+    CardDescription: 'No-contact delivery, shopping, errands',
+    pragraphs: [
+      {
+        pragraphText: 'Contactless Delivery',
+      },
+      { pragraphText: 'Contactless Prescription Pick-up & Delivery' },
+      {
+        pragraphText: 'Running Your Errands',
+      },
+      { pragraphText: 'Grocery Shopping & Delivery' },
+      {
+        pragraphText: 'Disinfecting Services',
+      },
+      { pragraphText: 'Drop Off Donations' },
     ],
   },
 ];

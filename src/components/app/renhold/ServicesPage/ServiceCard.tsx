@@ -7,7 +7,7 @@ const ServiceCard = ({ data }) => {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(`/services/${data?.id || data?.CardHeading?.replace(/\s+/g, '')}`);
+    router.push(`/services/${ data?.CardHeading?.replace(/\s+/g, '')}`);
   };
 
   return (

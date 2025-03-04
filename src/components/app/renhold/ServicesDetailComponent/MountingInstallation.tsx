@@ -55,7 +55,7 @@ const MountingInstallation = () => {
                 color="#FFFFFF"
               >
                 From TVs to shelves to artwork to lights, 
-                Taskers will make sure it's properly mounted and hung to your satisfaction.
+                Taskers will make sure it is properly mounted and hung to your satisfaction.
               </Text>
             </Box>
           </Box>

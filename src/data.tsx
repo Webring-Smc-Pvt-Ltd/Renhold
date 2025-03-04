@@ -140,7 +140,7 @@ export const MOVING=[
     Description: 'Even if you\'re not moving homes, you can still get a hand with in-home moving. Taskers can shift furniture upstairs, downstairs, or anywhere within your home.',
     Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1562181095/bs3jwuzzevcsmz7f9fuu.jpg'
   }
-]
+];
 
 //Furniture Assembly
 
@@ -240,7 +240,7 @@ export const MOUNTINGANDINSTALLATION=[
       Name: 'Hang Christmas Lights',
       Description: 'Need someone to hang Christmas lights? Sit back and relax while your Tasker lights up your home.'
     }
-  ]
+  ];
 
   //Cleaning 
 export const CLEANING = [
@@ -309,7 +309,7 @@ export const CLEANING = [
       Name: 'Spring Cleaning',
       Description: 'Pollen and cat hair and dust bunnies – oh my. We’ll get your home sparkling clean and allergen-free in no time.'
     }
-  ]
+  ];
 
   //Shopping + Delivery
 
@@ -322,7 +322,7 @@ export const CLEANING = [
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1428448751/jdz3qnucbtavshrwoyzh.jpg',
       Name: 'Grocery Shopping & Delivery',
-      Description: "Give us your shopping list and we'll stock your pantry with the groceries you need for the week."
+      Description: 'Give us your shopping list and we\'ll stock your pantry with the groceries you need for the week.'
     },
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1428448438/nwojcn8hxzfudorh19wa.jpg',
@@ -352,7 +352,7 @@ export const CLEANING = [
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1430424230/b2lfkt68avu0zm2i5nkf.jpg',
       Name: 'Contactless Delivery',
-      Description: "Send a Tasker to pick up and deliver anything you need. They'll get it done quickly and carefully."
+      Description: 'Send a Tasker to pick up and deliver anything you need. They\'ll get it done quickly and carefully.'
     },
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1586548746/giay3n1vjsgnayzhqrex.jpg',
@@ -421,9 +421,9 @@ export const CLEANING = [
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1608765695/aysurklwqrgsblzv8yg7.jpg',
       Name: 'General Mounting',
-      Description: "From TVs to shelves to artwork to lights, Taskers will make sure it's properly mounted and hung."
+      Description: 'From TVs to shelves to artwork to lights, Taskers will make sure it\'s properly mounted and hung.'
     }
-  ]
+  ];
 
   //Yardwork
 
@@ -548,7 +548,7 @@ export const CLEANING = [
       Description: 'Hire a Tasker to help power wash the exterior of your home, driveway and more.',
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1588016058/ypfho0jhbj87nbvlfw7n.jpg'
     }
-  ]
+  ];
 
 //Winter Tasks
 
@@ -613,7 +613,7 @@ export const WINTERTASKS=[
         Name: 'Wait in Line',
         Description: 'Hire a Tasker to as a professional line stander! They can wait in line for any event you need an assist with--even Black Friday shopping.'
     }
-]
+];
 
 // Office Services
 
@@ -668,7 +668,7 @@ export const OFFICESERVICES= [
         Name: 'Office Mounting Service',
         Description: 'Need a whiteboard, TV or other office items mounted? Hire a Tasker to get it done.'
     }
-]
+];
 
 // ContactLess Services
 
@@ -713,7 +713,7 @@ export const CONTACTLESSSERVICES= [
         Name: 'Virtual Assistant',
         Description: 'Get important tasks done efficiently today, from organizing files to managing your inbox and more.'
     }
-]
+];
 
 
   

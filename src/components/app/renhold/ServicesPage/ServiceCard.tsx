@@ -1,10 +1,17 @@
 import { Box, Text, Image, Link } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const ServiceCard = ({ data }) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/services/${data?.id || data?.CardHeading?.replace(/\s+/g, '')}`);
+  };
+
   return (
-    <Box mb="30px" as={Link} href="/services/servicesdetail">
+    <Box mb="30px" as='div' onClick={handleClick} cursor='pointer'>
       <Image alt="img" src={data?.CardImage} />
       <Text
         fontWeight="700"
@@ -33,7 +40,7 @@ const ServiceCard = ({ data }) => {
       >
         {data?.CardDescription}
       </Text>
-      <Box mt="30px">
+      <Box mt="30px" as={Link}>
         {data?.pragraphs?.map((pragraph, index) => (
           <Text
             key={index}

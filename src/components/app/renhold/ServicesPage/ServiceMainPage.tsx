@@ -7,7 +7,7 @@ import ServiceCard from './ServiceCard';
 const Services = [
   {
     CardImage: '/renhold/serviceimg1.png',
-    CardHeading: 'Furnitured Task',
+    CardHeading: 'Featured Task',
     CardDescription: 'Hire a Renhold for help around the house',
     pragraphs: [
       {

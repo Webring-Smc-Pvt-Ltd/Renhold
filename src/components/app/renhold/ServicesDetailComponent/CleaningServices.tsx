@@ -8,7 +8,7 @@ const Handyman = () => {
       <LayoutWrapper>
         <Box>
           <Box
-            bgImage="url('/renhold/featuredta.png')" // Replace 'path/to/your/image.jpg' with the actual path to your image file
+            bgImage="linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/ServiceDetail/cleaning.png')" // Replace 'path/to/your/image.jpg' with the actual path to your image file
             bgSize="cover"
             bgPosition="center"
             bgRepeat="no-repeat"

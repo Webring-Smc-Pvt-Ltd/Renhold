@@ -262,7 +262,7 @@ const ServiceDetail = () => {
                         lineHeight="150% "
                         color="#1F1F1F"
                       >
-                        Pay seamlessly through the TaskRabbit platform only
+                        Pay seamlessly through the Renhold platform only
                         after your task is complete
                       </Text>
                     </Box>

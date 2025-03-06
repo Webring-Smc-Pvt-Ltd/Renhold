@@ -318,7 +318,7 @@ const LocationMain = () => {
                       mx="auto"
                     >
                       Your Renhold arrives and gets the job done. Pay securely
-                      and leave a review, all through TaskRabbit.
+                      and leave a review, all through Renhold.
                     </Text>
                   </Box>
                 </Box>

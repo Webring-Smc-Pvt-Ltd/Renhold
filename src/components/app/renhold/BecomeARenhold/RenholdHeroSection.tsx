@@ -53,7 +53,7 @@ const RenholdHeroSection = () => {
             color="rgba(0, 0, 0, 0.8)"
             maxW={'339px'}
           >
-            See how much you can make tasking on TaskRabbit
+            See how much you can make tasking on Renhold
           </Text>
           <AreaDropdown />
           <ChoseCategoryDropdown />

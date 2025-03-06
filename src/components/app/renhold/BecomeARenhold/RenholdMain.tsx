@@ -327,7 +327,7 @@ const RenholdMain = () => {
                   lineHeight="150% "
                   color="#000000"
                 >
-                  I love TaskRabbit! I was able to get out of debt, tackle
+                  I love Renhold! I was able to get out of debt, tackle
                   bills, provide for my family, and still have enough room to
                   save for future goals.
                 </Text>

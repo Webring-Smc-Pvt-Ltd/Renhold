@@ -92,7 +92,7 @@ export const MOVING=[
   },
   {
     Name: 'Storage Unit Moving',
-    Description: 'Make your move into or out of storage simple with TaskRabbit\'s moving and storage service!',
+    Description: 'Make your move into or out of storage simple with Renhold\'s moving and storage service!',
     Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1622237255/if0golglu7e4nzjefyqh.jpg'
   },
   {
@@ -223,7 +223,7 @@ export const MOUNTINGANDINSTALLATION=[
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1428448636/dwr5db1lu0jzugihonrq.jpg',
       Name: 'Install Blinds & Window Treatments',
-      Description: 'Use TaskRabbit to get your curtains, curtain rods, blinds, and drapes installed.'
+      Description: 'Use Renhold to get your curtains, curtain rods, blinds, and drapes installed.'
     },
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1588967277/dmzs7igh2suvoz4p3nbf.jpg',
@@ -347,7 +347,7 @@ export const CLEANING = [
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1554490040/bp2azf4g3hcdeb6hkxac.jpg',
       Name: 'Drop Off Donations',
-      Description: 'Give back while tidying up. When you book a Tasker to bring donations to charity, we give a portion of our service fee to local nonprofits through TaskRabbit for Good.'
+      Description: 'Give back while tidying up. When you book a Tasker to bring donations to charity, we give a portion of our service fee to local nonprofits through Renhold for Good.'
     },
     {
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1430424230/b2lfkt68avu0zm2i5nkf.jpg',
@@ -445,7 +445,7 @@ export const CLEANING = [
     },
     {
       Name: 'Lawn Mowing Services',
-      Description: 'If you\'re thinking \'I need my grass cut today!\' then consider hiring a Tasker. Find same day lawn mowing services with TaskRabbit.',
+      Description: 'If you\'re thinking \'I need my grass cut today!\' then consider hiring a Tasker. Find same day lawn mowing services with Renhold.',
       Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1625691609/yqintrumetdk6heb2pty.jpg'
     },
     {
@@ -626,17 +626,17 @@ export const OFFICESERVICES= [
     {
         Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1563302004/bewqumtxfpkn89dz9dgq.jpg',
         Name: 'Office Tech Setup',
-        Description: 'Have an upcoming meeting or conference with tech that needs to be set up? TaskRabbit has just the right Tasker to get it exactly how you want it.'
+        Description: 'Have an upcoming meeting or conference with tech that needs to be set up? Renhold has just the right Tasker to get it exactly how you want it.'
     },
     {
         Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1563302708/cddmdjmy2kv2j199nhkd.jpg',
         Name: 'Office Movers',
-        Description: 'Moving is hard, especially when you’re moving an office. Looking for a trusted mover? TaskRabbit to the rescue!'
+        Description: 'Moving is hard, especially when you’re moving an office. Looking for a trusted mover? Renhold to the rescue!'
     },
     {
         Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1563303454/mbgbhf43zxabhvmscir5.jpg',
         Name: 'Office Supply & Snack Delivery',
-        Description: 'Looking for same day delivery on office supplies and snacks? TaskRabbit can be of service!'
+        Description: 'Looking for same day delivery on office supplies and snacks? Renhold can be of service!'
     },
     {
         Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1563300741/lthmulj1cbg9oq2hfymr.jpg',
@@ -661,7 +661,7 @@ export const OFFICESERVICES= [
     {
         Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1650386921/bv1adylph9ihvqjhzmlk.jpg',
         Name: 'Moving Office Furniture',
-        Description: 'Moving office furniture can be a hassle, so try TaskRabbit and take the stress out of the whole process!'
+        Description: 'Moving office furniture can be a hassle, so try Renhold and take the stress out of the whole process!'
     },
     {
         Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1651086046/jx5o4txptvfq8wv3rfwa.jpg',
@@ -701,7 +701,7 @@ export const CONTACTLESSSERVICES= [
     {
         Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1554490040/bp2azf4g3hcdeb6hkxac.jpg',
         Name: 'Drop Off Donations',
-        Description: 'Give back while tidying up. When you book a Tasker to bring donations to charity, we give a portion of our service fee to local nonprofits through TaskRabbit for Good.'
+        Description: 'Give back while tidying up. When you book a Tasker to bring donations to charity, we give a portion of our service fee to local nonprofits through Renhold for Good.'
     },
     {
         Image: 'https://res.cloudinary.com/taskrabbit-com/image/upload/q_auto,f_auto/c_fill,h_200,w_200/v1428448794/gweisgd5bxoafin5euse.jpg',

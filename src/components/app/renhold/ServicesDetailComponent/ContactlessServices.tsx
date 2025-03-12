@@ -1,8 +1,13 @@
 import { Box, Text, Button, Flex, Image } from '@chakra-ui/react';
 import React from 'react';
+import {useRouter} from 'next/router';
 import LayoutWrapper from '../../../core/LayoutWrapper/LayoutWrapper';
 import {CONTACTLESSSERVICES} from '../../../../data';
 const ContactlessServices = () => {
+  const router = useRouter();
+  const handleBooking = (service) => {
+    router.push(`/book-service?service=${encodeURIComponent(service.Name)}`);
+  };
   return (
     <>
       <LayoutWrapper>
@@ -118,6 +123,7 @@ const ContactlessServices = () => {
                           px="26px"
                           h="41px"
                           fontSize={'16px'}
+                          onClick={() => handleBooking(Service)}
                         >
                           Book Now
                         </Button>

@@ -23,7 +23,7 @@ const Header = () => {
             <Flex>
               <Link
                 href="/"
-                maxW={{ sm: '128px', base: '100px' }}
+                maxW={{ sm: '170px', base: '200px' }}
                 ml={{ sm: '16px', base: '15px' }}
                 textDecoration="none !important"
                 position="relative"
@@ -37,7 +37,14 @@ const Header = () => {
                 /> */}
                 <Text
                 color='white'
-                fontSize="26px"
+                fontSize={{
+                  base: '22px',
+                  md: '24px',
+                  lg: '26px',
+                  xl: '28px',
+                  xxl: '32px',
+                  xxxl: '34px',
+                }}
                 fontWeight="600px"
                 lineHeight={'24px'}
                 >

@@ -2,13 +2,13 @@ import { CheckCircleIcon, StarIcon } from '@chakra-ui/icons';
 import { Box, Flex, Image, Text, Button } from '@chakra-ui/react';
 import React from 'react';
 
-const TaskerCard = () => {
+const TaskerCard = ({onComplete}) => {
   return (
     <>
-      <Box border="1px solid #B9B9B9" borderRadius="5px" p="30px">
+      <Box border="1px solid #B9B9B9" borderRadius="5px" p="30px" mb={10}>
         <Flex justifyContent={'space-between'} gap="40px">
           <Box w="30%">
-            <Image mb="20px" alt='img' src="/tasker/taskerimg1.png"></Image>
+            <Image mb="20px" alt='img' src="/renhold/taskerimg1.png"></Image>
             <Box mb="20px">
               <Text
                 fontWeight="700"
@@ -24,12 +24,13 @@ const TaskerCard = () => {
               </Text>
             </Box>
             <Box>
-              <Button mb="20px" colorScheme="#1F4A40" bg="#1F4A40">
+              <Button mb="20px" colorScheme="#1F4A40" bg="#1F4A40"
+              onClick={onComplete}
+              >
                 Select & Continue
               </Button>
             </Box>
-            <Text
-              textAlign={'center'}
+            <Text 
               fontWeight="500"
               fontSize={{
                 base: '14px',
@@ -113,7 +114,7 @@ const TaskerCard = () => {
                   </Text>
                 </Flex>
                 <Flex gap="20px" alignItems={'center'}>
-                  <Image alt="img" src="/tasker/customvehivle.svg"></Image>
+                  <Image alt="img" src="/renhold/customvehivle.svg"></Image>
                   <Text
                     fontWeight="500"
                     fontSize={{
@@ -142,7 +143,7 @@ const TaskerCard = () => {
                   How I can help:
                 </Text>
                 <Text
-                  textAlign={'center'}
+                  
                   fontWeight="500"
                   fontSize={{
                     base: '14px',
@@ -171,7 +172,7 @@ const TaskerCard = () => {
               </Box>
               <Box>
                 <Flex gap="30px" alignItems={'center'} mt="30px">
-                  <Image src="/tasker/revieverimg.png"></Image>
+                  <Image src="/renhold/revieverimg.png"></Image>
                   <Box>
                     <Text
                       fontWeight="500"

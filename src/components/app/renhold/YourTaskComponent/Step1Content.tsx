@@ -19,7 +19,7 @@ interface FormData {
   location: string;
   date: string;
 }
-const Step1Content = () => {
+const Step1Content = ({ selectedService, onComplete }) => {
   const [formData, setFormData] = useState<FormData>({
     StreetAddress: '',
     Unit: '',
@@ -35,6 +35,11 @@ const Step1Content = () => {
       setStep(step + 1);
     }
   };
+
+  const handleNextFlow = () => {
+    onComplete();
+  };
+
 
   const validateStep = () => {
     const errors: Partial<FormData> = {};
@@ -57,7 +62,10 @@ const Step1Content = () => {
 
   return (
     <Box p={4}>
-      <Text
+      <Text fontSize="24px" fontWeight="bold" mb="10px">
+        {selectedService || 'No Service Selected'}
+      </Text>
+      {/* <Text
         fontWeight="600"
         fontSize={{
           base: '18px',
@@ -69,7 +77,7 @@ const Step1Content = () => {
         mb="8px"
       >
         Furniture Assembly
-      </Text>
+      </Text> */}
       <form>
         <Box>
           {step >= 1 && (
@@ -133,7 +141,7 @@ const Step1Content = () => {
             </Box>
           )}
 
-          {step >= 2 && (
+          {/* {step >= 2 && (
             <Box
               mb="30px"
               borderRadius={'5px'}
@@ -154,19 +162,6 @@ const Step1Content = () => {
                 >
                   Your Items
                 </FormLabel>
-                <Text
-                  fontWeight="500"
-                  fontSize={{
-                    base: '18px',
-                    md: '20px',
-                    lg: '24px',
-                  }}
-                  lineHeight="150% "
-                  color="#000000"
-                  mb="20px"
-                >
-                  What type of furniture do you need assembled or disassembled?
-                </Text>
                 <RadioGroup name="form-name">
                   <Box mb="10px">
                     <Radio value="1">IKEA furniture items only</Radio>
@@ -181,9 +176,9 @@ const Step1Content = () => {
                 </RadioGroup>
               </FormControl>
             </Box>
-          )}
+          )} */}
 
-          {step >= 3 && (
+          {step >= 2 && (
             <Box
               mb="30px"
               borderRadius={'5px'}
@@ -263,7 +258,7 @@ const Step1Content = () => {
               </FormControl>
             </Box>
           )}
-          {step >= 4 && (
+          {step >= 3 && (
             <Box
               mb="30px"
               borderRadius={'5px'}
@@ -323,7 +318,7 @@ const Step1Content = () => {
             </Box>
           )}
 
-          {step <= 5 ? (
+          {step <= 3 ? (
             <Flex justifyContent={'center'}>
               <Button
                 colorScheme="#1F4A40"
@@ -334,8 +329,17 @@ const Step1Content = () => {
                 Continue
               </Button>
             </Flex>
-          ) : (
-            <Text>Form completed!</Text>
+          ):(
+            <Flex justifyContent={'center'}>
+              <Button
+                colorScheme="#1F4A40"
+                bg="#1F4A40"
+                mt={4}
+                onClick={handleNextFlow}
+              >
+                Continue
+              </Button>
+            </Flex>
           )}
         </Box>
       </form>

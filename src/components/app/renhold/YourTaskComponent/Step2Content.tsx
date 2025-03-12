@@ -5,7 +5,7 @@ import TimeDropdown from './TimeDropdown';
 import PriceRangeSlider from './PricerangeSlider';
 import TaskerCard from './TaskerCard';
 
-function Step2Content() {
+function Step2Content({onComplete}) {
   return (
     <>
       <Box>
@@ -138,7 +138,11 @@ function Step2Content() {
             </Box>
           </Box>
           <Box w={{ base: '100%', lg: '70%' }}>
-            <TaskerCard />
+            <TaskerCard onComplete={onComplete}/>
+            <TaskerCard onComplete={onComplete}/>
+            <TaskerCard onComplete={onComplete}/>
+            <TaskerCard onComplete={onComplete}/>
+            <TaskerCard onComplete={onComplete}/>
           </Box>
         </Flex>
       </Box>

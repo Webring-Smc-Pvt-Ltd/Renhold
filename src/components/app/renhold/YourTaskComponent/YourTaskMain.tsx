@@ -26,7 +26,7 @@ const steps = [
 function YourTaskMain() {
   const router = useRouter();
   const { service } = router.query; // Get service from URL
-  const [selectedService, setSelectedService] = useState("");
+  const [selectedService, setSelectedService] = useState('');
   const [isStep1Completed, setIsStep1Completed] = useState(false);
   const [activeStep, setActiveStep] = useState(0);
 
@@ -49,9 +49,9 @@ function YourTaskMain() {
   };
 
   const handleBack=() => {
-    setIsStep1Completed(true)
-    handleContinue()
-  }
+    setIsStep1Completed(true);
+    handleContinue();
+  };
 
   return (
     <Box py="50px">

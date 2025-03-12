@@ -4,6 +4,8 @@ import DatesRadio from './DatesRadio';
 import TimeDropdown from './TimeDropdown';
 import PriceRangeSlider from './PricerangeSlider';
 import TaskerCard from './TaskerCard';
+import PropTypes from 'prop-types';
+
 
 function Step2Content({onComplete}) {
   return (
@@ -149,5 +151,9 @@ function Step2Content({onComplete}) {
     </>
   );
 }
+
+Step2Content.propTypes = {
+  onComplete: PropTypes.func.isRequired, // Ensure onComplete is a function
+};
 
 export default Step2Content;

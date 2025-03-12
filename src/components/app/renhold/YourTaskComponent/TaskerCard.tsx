@@ -1,6 +1,7 @@
 import { CheckCircleIcon, StarIcon } from '@chakra-ui/icons';
 import { Box, Flex, Image, Text, Button } from '@chakra-ui/react';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TaskerCard = ({onComplete}) => {
   return (
@@ -207,6 +208,10 @@ const TaskerCard = ({onComplete}) => {
       </Box>
     </>
   );
+};
+
+TaskerCard.propTypes = {
+  onComplete: PropTypes.func.isRequired,
 };
 
 export default TaskerCard;

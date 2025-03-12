@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   Box,
   Text,
@@ -345,6 +346,11 @@ const Step1Content = ({ selectedService, onComplete }) => {
       </form>
     </Box>
   );
+};
+
+Step1Content.propTypes = {
+  onComplete: PropTypes.func.isRequired, // Ensure onComplete is a function
+  selectedService: PropTypes.string, // Define selectedService as a string
 };
 
 export default Step1Content;

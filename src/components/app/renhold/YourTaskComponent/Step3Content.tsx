@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css'; // Import default calendar styles
@@ -33,7 +35,7 @@ const Step3Content = ({ onComplete }) => {
       <Grid templateColumns="1fr 1px 1fr" gap={4} alignItems="center">
         {/* Calendar Section */}
         <VStack spacing={10} align="start" pr={6}>
-          <Text fontWeight="bold">Accursio M.'s Availability</Text>
+          <Text fontWeight="bold">Accursio M.&apos;s Availability</Text>
           <Calendar
             onChange={(date: Date) => setSelectedDate(date)}
             value={selectedDate}
@@ -108,5 +110,9 @@ const Step3Content = ({ onComplete }) => {
     </Box>
   );
 };
+
+    Step3Content.propTypes = {
+    onComplete: PropTypes.func.isRequired, // Ensure onComplete is a function
+  };
 
 export default Step3Content;

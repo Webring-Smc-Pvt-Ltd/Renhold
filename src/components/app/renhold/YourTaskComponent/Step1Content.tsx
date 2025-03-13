@@ -35,24 +35,38 @@ const Step1Content = ({ selectedService, onComplete }) => {
     if (validateStep()) {
       setStep(step + 1);
     }
-  console.log('Step ',step);
   };
 
   const handleNextFlow = () => {
-    console.log('Step ',step);
     onComplete();
   };
 
-
   const validateStep = () => {
     const errors: Partial<FormData> = {};
+
     if (step === 1) {
       if (!formData.StreetAddress) {
         errors.StreetAddress = 'Street address is required';
       }
       // Add more validation rules for the first step here
     }
-    // You can add validation for other steps as needed
+
+    if (step === 2) {
+      if (!formData.location) {
+        errors.location = 'Location is required';
+      }
+      if (!formData.date) {
+        errors.date = 'Date is required';
+      }
+      // Add more validation rules for the second step here
+    }
+
+    if (step === 3) {
+      if (!formData.description) {
+        errors.description = 'Description is required';
+      }
+      // Add more validation rules for the third step here
+    }
 
     if (Object.keys(errors).length > 0) {
       setValidations(errors);
@@ -188,20 +202,11 @@ const Step1Content = ({ selectedService, onComplete }) => {
               border="1px solid #CFCFCF"
               p={{ base: '20px', lg: '40px' }}
             >
-              <FormControl id="description" mb={4}>
-                <FormLabel
-                  fontWeight="500"
-                  fontSize={{
-                    base: '18px',
-                    md: '20px',
-                    lg: '24px',
-                  }}
-                  lineHeight="150% "
-                  color="#000000"
-                  mb="20px"
-                >
-                  Task options
-                </FormLabel>
+              <FormControl
+                id="task-size"
+                mb={4}
+                isInvalid={!!validations.location}
+              >
                 <Text
                   fontWeight="500"
                   fontSize={{
@@ -216,23 +221,34 @@ const Step1Content = ({ selectedService, onComplete }) => {
                   How big is your task?
                 </Text>
                 <RadioGroup
-                  name="form-name"
+                  name="task-size"
                   display={'flex'}
                   justifyContent={'space-between'}
+                  value={formData.location}
+                  onChange={(value) =>
+                    setFormData({ ...formData, location: value })
+                  }
                 >
                   <Box mb="10px">
-                    <Radio value="1">Small-Est. 1hr</Radio>
-                  </Box>
-
-                  <Box mb="10px">
-                    <Radio value="2">Medium-Est. 2-3hrs</Radio>
+                    <Radio value="Small-Est. 1hr">Small-Est. 1hr</Radio>
                   </Box>
                   <Box mb="10px">
-                    <Radio value="3">Large-Est. 4+hrs</Radio>
+                    <Radio value="Medium-Est. 2-3hrs">Medium-Est. 2-3hrs</Radio>
+                  </Box>
+                  <Box mb="10px">
+                    <Radio value="Large-Est. 4+hrs">Large-Est. 4+hrs</Radio>
                   </Box>
                 </RadioGroup>
+                {validations.location && (
+                  <Text color="red">{validations.location}</Text>
+                )}
               </FormControl>
-              <FormControl id="description" mb={4}>
+
+              <FormControl
+                id="vehicle-requirements"
+                mb={4}
+                isInvalid={!!validations.date}
+              >
                 <Text
                   fontWeight="500"
                   fontSize={{
@@ -246,18 +262,30 @@ const Step1Content = ({ selectedService, onComplete }) => {
                 >
                   Vehicle Requirements
                 </Text>
-                <RadioGroup name="form-name">
+                <RadioGroup
+                  name="vehicle-requirements"
+                  value={formData.date}
+                  onChange={(value) =>
+                    setFormData({ ...formData, date: value })
+                  }
+                >
                   <Box mb="10px">
-                    <Radio value="1">Not need for task</Radio>
+                    <Radio value="Not need for task">Not need for task</Radio>
                   </Box>
-
                   <Box mb="10px">
-                    <Radio value="2">Task requires a car</Radio>
+                    <Radio value="Task requires a car">
+                      Task requires a car
+                    </Radio>
                   </Box>
                   <Box mb="10px">
-                    <Radio value="3">Task requires a truck</Radio>
+                    <Radio value="Task requires a truck">
+                      Task requires a truck
+                    </Radio>
                   </Box>
                 </RadioGroup>
+                {validations.date && (
+                  <Text color="red">{validations.date}</Text>
+                )}
               </FormControl>
             </Box>
           )}
@@ -268,7 +296,11 @@ const Step1Content = ({ selectedService, onComplete }) => {
               border="1px solid #CFCFCF"
               p={{ base: '20px', lg: '40px' }}
             >
-              <FormControl id="description" mb={4}>
+              <FormControl
+                id="description"
+                mb={4}
+                isInvalid={!!validations.description}
+              >
                 <FormLabel
                   fontWeight="500"
                   fontSize={{
@@ -295,29 +327,22 @@ const Step1Content = ({ selectedService, onComplete }) => {
                 >
                   Start the conversation and tell your Renhold what you need
                   done. This helps us show you only qualified and available
-                  Renhold for the job. Dont worry, you can edit this later.
+                  Renhold for the job. Don&apos;t worry, you can edit this later.
                 </Text>
                 <Textarea
                   resize={'none'}
                   h="120px"
                   p="20px"
-                  placeholder="Start the conversation and tell your Renhold what you need done. This helps us show you only qualified and available Renhold for the job. Dont worry, you can edit this later."
+                  placeholder='Start the conversation and tell your Renhold what you need done. This helps us show you only qualified and available Renhold for the job. Don&apos;t worry, you can edit this later.'
+                  value={formData.description}
+                  onChange={(e) =>
+                    setFormData({ ...formData, description: e.target.value })
+                  }
                 />
+                {validations.description && (
+                  <Text color="red">{validations.description}</Text>
+                )}
               </FormControl>
-              <Text
-                fontWeight="400"
-                fontSize={{
-                  base: '14px',
-                  md: '16px',
-                  lg: '16px',
-                }}
-                lineHeight="150% "
-                color="#000000"
-                mb="20px"
-              >
-                If you need two or more Renhold, please post additional task for
-                each Renhold needed.
-              </Text>
             </Box>
           )}
 
@@ -332,7 +357,7 @@ const Step1Content = ({ selectedService, onComplete }) => {
                 Continue
               </Button>
             </Flex>
-          ):(
+          ) : (
             <Flex justifyContent={'center'}>
               <Button
                 colorScheme="#1F4A40"

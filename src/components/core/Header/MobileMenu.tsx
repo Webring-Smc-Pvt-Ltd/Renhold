@@ -9,7 +9,7 @@ import {
   Button,
   Flex,
   Link,
-  Image,
+  Text,
   Box,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
@@ -48,7 +48,21 @@ export const MobileMenu = () => {
               alignItems={'center'}
               justifyContent={'center'}
             >
-              <Image src="/header/TechLogo.png" alt="logo" />
+              <Text
+                color='white'
+                fontSize={{
+                  base: '22px',
+                  md: '24px',
+                  lg: '26px',
+                  xl: '28px',
+                  xxl: '32px',
+                  xxxl: '34px',
+                }}
+                fontWeight="600px"
+                lineHeight={'24px'}
+                >
+                  RENHOLD
+                </Text>
             </Link>
           </DrawerHeader>
 

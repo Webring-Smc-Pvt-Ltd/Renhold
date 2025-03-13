@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Grid } from '@chakra-ui/react';
 import { useRadio, useRadioGroup } from '@chakra-ui/react';
-import PropTypes from 'prop-types';  // Import prop-types
+import PropTypes from 'prop-types'; // Import prop-types
 
 function RadioCard(props) {
   const { getInputProps, getRadioProps } = useRadio(props);

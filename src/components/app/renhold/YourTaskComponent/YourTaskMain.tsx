@@ -16,6 +16,8 @@ import {
 import Step1Content from './Step1Content';
 import Step2Content from './Step2Content';
 import Step3Content from './Step3Content';
+import Step4Content from './Step4Content';
+
 const steps = [
   { title: 'Discribe your task' },
   { title: 'Browse Renhold & prices' },
@@ -127,6 +129,7 @@ function YourTaskMain() {
           </Box>
 
           <Box> {activeStep === 2 && <Step3Content onComplete={handleBack} />}</Box>
+          <Box> {activeStep === 3 && <Step4Content  />}</Box>
         </Box>
       </Box>
     </Box>

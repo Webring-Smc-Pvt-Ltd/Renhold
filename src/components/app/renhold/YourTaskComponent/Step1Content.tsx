@@ -35,9 +35,11 @@ const Step1Content = ({ selectedService, onComplete }) => {
     if (validateStep()) {
       setStep(step + 1);
     }
+  console.log('Step ',step);
   };
 
   const handleNextFlow = () => {
+    console.log('Step ',step);
     onComplete();
   };
 
@@ -319,7 +321,7 @@ const Step1Content = ({ selectedService, onComplete }) => {
             </Box>
           )}
 
-          {step <= 3 ? (
+          {step <= 2 ? (
             <Flex justifyContent={'center'}>
               <Button
                 colorScheme="#1F4A40"

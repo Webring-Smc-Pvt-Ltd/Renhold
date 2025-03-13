@@ -66,7 +66,7 @@ export const MobileMenu = () => {
                   borderBottom={'2px solid rgba(52, 97, 255, 1)'}
                 >
                   <Link
-                    href="#"
+                    href="/location"
                     color="white"
                     _hover={{ textDecoration: 'none' }}
                     fontSize="16px"
@@ -83,7 +83,7 @@ export const MobileMenu = () => {
                   fontWeight="400"
                   lineHeight={'24px'}
                 >
-                  <Link href="#" _hover={{ textDecoration: 'none' }}>
+                  <Link href="/services" _hover={{ textDecoration: 'none' }}>
                     Services
                   </Link>
                 </Box>
